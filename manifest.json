@@ -1,0 +1,21 @@
+{
+  "name": "Фитнес-зал: Тренировки и Питание",
+  "short_name": "Фитнес-зал",
+  "start_url": "mobile",
+  "display": "standalone",
+  "background_color": "#DCDCDC",
+  "theme_color": "#808080",
+  "description": "Простое фитнес-приложение с программой тренировок, советами по питанию и формой отзывов.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

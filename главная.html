@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Фитнес-зал: Тренировки и Питание</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #DCDCDC; }
+        header { background: #808080; color: #fff; padding: 20px 0; text-align: center; }
+        nav { background: #A9A9A9; padding: 10px; text-align: center; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        section { max-width: 900px; margin: 30px auto; background: #fff; padding: 30px; border-radius: 10px; }
+        h2 { color: #2d3e50; }
+        .workout-img { width: 120px; border-radius: 8px; margin-right: 15px; vertical-align: middle; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+        th { background: #808080; color: #fff; }
+        .tip { background: #DCDCDC; border-left: 4px solid #808080; padding: 10px; margin: 10px 0; }
+
+        /* Стили для формы отзывов */
+        #reviewForm label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #2d3e50;
+        }
+        #reviewForm input, #reviewForm textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        #reviewForm textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        #reviewForm button {
+            margin-top: 15px;
+            background: #808080;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+        #reviewForm button:hover {
+            background: #666666;
+        }
+        #reviewMessage {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+<link rel="manifest" href="manifest.json">
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/serviceworker.js');
+    });
+  }
+</script>
+  }
+</script>
+</head>
+<body>
+    <header>
+        <h1>Фитнес-зал: Тренировки и Питание</h1>
+        <p>Простые советы для здорового образа жизни</p>
+    </header>
+    <nav>
+        <a href="#workouts">Тренировка</a>
+        <a href="#weights">Подбор веса</a>
+        <a href="#nutrition">Питание</a>
+    </nav>
+
+    <section id="workouts">
+        <h2><a href="программа.html">Программа тренировки</a></h2>
+        <ul>
+            <li><b>Разминка</b> — 20 минут полная разминка тела</li>
+            <li><b>Жим лежа</b> — 4 подхода с повторениями в зависимости от веса</li>
+            <li><b>Присед со штангой</b> — 4 подхода с повторениями в зависимости от веса</li>
+            <li><b>Становая тяга</b> — 3 подхода с повторениями в зависимости от веса</li>
+        </ul>
+    </section>
+
+    <section id="weights">
+        <h2>Как подобрать вес для упражнений?</h2>
+        <div class="tip">
+            <b>Совет:</b> Для набора мышечной массы начинайте с веса, с которым можете выполнить 10-12 повторений с правильной техникой. Если последние повторения даются с трудом, но без потери формы — это ваш рабочий вес. Если вы хотите поддерживать вашу форму или убрать лишний вес - ваш рабочий вес будет тот, с которым вы можете выполнить 12-15 повторений в количестве 3-4 подходов. 
+        </div>
+        <table>
+            <tr>
+                <th>Упражнение</th>
+                <th>Новичок</th>
+                <th>Средний уровень</th>
+                <th>Продвинутый</th>
+            </tr>
+            <tr>
+                <td>Жим лежа</td>
+                <td>40%-60% от веса тела</td>
+                <td>70%-85% от веса тела</td>
+                <td>85% и более от веса тела</td>
+            </tr>
+            <tr>
+                <td>Приседания</td>
+                <td>30%-50% от веса тела</td>
+                <td>50%-75% от веса тела</td>
+                <td>75% и более от веса тела</td>
+            </tr>
+            <tr>
+                <td>Становая тяга</td>
+<td>30%–40% от веса тела</td>
+                <td>50%–80% от веса тела</td>
+                <td>90% и более от веса тела</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="nutrition">
+        <h2><a href="питание.html">Питание для тренировок</a></h2>
+        <ul>
+            <li>Завтрак — крупы, яйца, фрукты</li>
+            <li>Обед — мясо/рыба, крупы, овощи, супы</li>
+            <li>Ужин — мясо/рыба, крупы, овощи</li>
+            <li>Перекусы — творог, фрукты</li>
+        </ul>
+        <div class="tip">
+            <b>Важно:</b> Старайтесь соблюдать высокобелковое питания, так как именно белок нужен для строения мышечных волокон. Также, не забывайте пить достаточное количество воды и избегать продуктов с высоким содержанием сахара.
+        </div>
+    </section>
+
+    <!-- Форма для отзывов -->
+    <section id="reviews">
+        <h2>Оставить отзыв</h2>
+        <form id="reviewForm">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="comment">Отзыв</label>
+            <textarea id="comment" name="comment" required></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
+        <div id="reviewMessage"></div>
+    </section>
+
+    <script>
+        const reviewForm = document.getElementById('reviewForm');
+        const reviewMessage = document.getElementById('reviewMessage');
+
+        reviewForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const name = reviewForm.name.value.trim();
+            const email = reviewForm.email.value.trim();
+            const comment = reviewForm.comment.value.trim();
+
+            if (!name  !email  !comment) {
+                reviewMessage.style.color = 'red';
+                reviewMessage.textContent = 'Пожалуйста, заполните все поля.';
+                return;
+            }
+
+            reviewMessage.style.color = 'black';
+            reviewMessage.textContent = 'Отправка...';
+
+            try {
+                const response = await fetch('script.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email, comment })
+                });
+                const result = await response.json();
+
+                if (result.status === 'success') {
+                    reviewMessage.style.color = 'green';
+                    reviewForm.reset();
+                } else {
+                    reviewMessage.style.color = 'red';
+                }
+                reviewMessage.textContent = result.message;
+            } catch (error) {
+                reviewMessage.style.color = 'red';
+                reviewMessage.textContent = 'Ошибка сети. Попробуйте позже.';
+            }
+        });
+    </script>
+</body>
+</html>
