@@ -1,7 +1,7 @@
 const CACHE_NAME = 'fit-app-cache-v1';
 const urlsToCache = [
   '/',
-  '/главная.html',
+  '/index.html',
   '/manifest.json',
   '/serviceworker.js',
   '/style.css',
